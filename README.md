@@ -1,14 +1,17 @@
-# Draw Receipt with Multiline Text
-
-Here is how to draw multiline receipt to fix issue of https://github.com/danielfelgar/DrawReceipt
+# Draw Receipt with Multiline text in same line
 
 By adding this code below: 
 
-    val DEFAULT_TEXT_SIZE = 80f //set suitable size for your printer
-    val MAXIMUM_CHARACTER_LINE = 26 //set suitable max based on your printer width
+- Add to your dependancies 
 
-//write any text to print with multiline
+       implementation 'com.github.danielfelgar:draw-receipt:0.1.3'
 
+
+- write any text to print with multiline
+
+       val DEFAULT_TEXT_SIZE = 80f //set suitable size for your printer
+       val MAXIMUM_CHARACTER_LINE = 26 //set suitable max based on your printer width
+    
         val receipt = splitItemText(
             "Trying to print Multiline to receipt POS Trying to print Multiline to receipt " +
                     "POS Trying to print Multiline to receipt POS",
@@ -16,9 +19,9 @@ By adding this code below:
         )
         
         
-//Here you can send receipt to your POS printer like Sunmi devices, Newland or any external printers like epson...etc
+- Here you can send receipt to your POS printer like Sunmi devices, Newland or any external printers like epson...etc
 
-        yourPrinter.print(bitmap)
+        <yourPrinter>.print(bitmap)
         
         //OR show it inside imageview 
         

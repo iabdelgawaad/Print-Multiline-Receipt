@@ -7,7 +7,8 @@ By adding this code below:
     val DEFAULT_TEXT_SIZE = 80f //set suitable size for your printer
     val MAXIMUM_CHARACTER_LINE = 26 //set suitable max based on your printer width
 
-//write any text to print with multi line
+//write any text to print with multiline
+
         val receipt = splitItemText(
             "Trying to print Multiline to receipt POS Trying to print Multiline to receipt " +
                     "POS Trying to print Multiline to receipt POS",
@@ -15,7 +16,7 @@ By adding this code below:
         )
         
         
-//Here you can send receipt to your POS printer like Sunmi devices or any external printers
+//Here you can send receipt to your POS printer like Sunmi devices, Newland or any external printers like epson...etc
 
         yourPrinter.print(bitmap)
         

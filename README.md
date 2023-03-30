@@ -28,5 +28,5 @@ By adding this code below:
         val view = findViewById<ImageView>(R.id.receipt_image)
         view.setImageBitmap(receipt)
 
-![Screenshot_20230329_114014](https://user-images.githubusercontent.com/4660684/228477337-0f09b630-de22-4aeb-9e3a-2dd5d674ed3c.png)
 
+![IMG_20230330_123737](https://user-images.githubusercontent.com/4660684/228796254-353fdbb4-8b6f-44e8-92a4-368e0cbefad4.jpg)
